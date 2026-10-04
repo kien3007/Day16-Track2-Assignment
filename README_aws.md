@@ -161,16 +161,16 @@ Chạy script và điền kết quả vào bảng:
 
 | Metric | Kết quả |
 |---|---|
-| Thời gian load data | |
-| Thời gian training | |
-| Best iteration | |
-| AUC-ROC | |
-| Accuracy | |
-| F1-Score | |
-| Precision | |
-| Recall | |
-| Inference latency (1 row) | |
-| Inference throughput (1000 rows) | |
+| Thời gian load data | 2.383 s |
+| Thời gian training | 4.2401 s |
+| Best iteration | 0 |
+| AUC-ROC | 0.8061 |
+| Accuracy | 0.9985 (99.85%) |
+| F1-Score | 0.5849 |
+| Precision | 0.5439 |
+| Recall | 0.6327 |
+| Inference latency (1 row) | 0.4483 ms |
+| Inference throughput (1000 rows) | 303,561.12 rows/s |
 
 ---
 
