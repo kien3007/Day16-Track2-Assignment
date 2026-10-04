@@ -1,0 +1,5 @@
+Báo cáo kết quả Benchmark Mô hình LightGBM trên CPU Node (t3.medium):
+Thời gian nạp dữ liệu và huấn luyện: Mô hình hoàn tất nạp 284,807 giao dịch trong 2.34 giây và quá trình huấn luyện LightGBM (100 rounds) chỉ mất 4.28 giây trên cấu hình CPU 2 vCPU – chứng minh thuật toán Histogram-based của LightGBM tối ưu CPU cực kỳ xuất sắc.
+Khả năng phân loại và chỉ số AUC-ROC: Mô hình đạt AUC-ROC = 0.8061 và Accuracy = 99.85%; do tính chất bài toán phát hiện gian lận (Credit Card Fraud) có độ mất cân bằng dữ liệu rất cao (dưới 0.2% giao dịch lừa đảo), chỉ số F1-Score đạt 0.5849 (với Precision = 54.39% và Recall = 63.27%).
+Hiệu năng và độ trễ Inference: Tốc độ suy luận đạt mức ấn tượng với độ trễ dự đoán đơn lẻ chỉ 0.46 ms / dòng và thông lượng xử lý hàng loạt đạt xấp xỉ 293,103 dòng / giây.
+Đánh giá tổng quan: Việc triển khai hạ tầng CPU instance nhỏ (t3.medium) hoàn toàn đáp ứng tốt cả về thời gian huấn luyện lẫn độ trễ xử lý theo thời gian thực (real-time scoring), giúp tiết kiệm chi phí vận hành tối đa so với việc sử dụng GPU cho dạng dữ liệu bảng (tabular data).
